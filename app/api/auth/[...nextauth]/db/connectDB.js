@@ -2,8 +2,12 @@ const { default: mongoose } = require("mongoose")
 
 const connectDB = async() =>{
     try {
-        const conn = await mongoose.connect(process.env.DB_URL);
-        console.log('database connection successful');
+        const {connection} = await mongoose.connect(process.env.DB_URL, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            dbName: 'getMeChaiApp'
+        });
+        console.log('database connection successful',connection.host);
     } catch (error) {
         console.log('error===>',error);
     }

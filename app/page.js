@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row items-center justify-center text-5xl font-bold">
           Get Best Notes
           <span>
-            <Image  className="h-16" src="/cute-kitty2.gif" alt="gif image" />
+            <Image width={16} height={16}  className="h-16 w-auto"  src="/cute-kitty2.gif" alt="gif image" />
           </span>
         </div>
         <p>A notes platform for students to get good marks.</p>
@@ -42,17 +42,17 @@ export default function Home() {
 
       <div className=" min-h-[50vh] flex flex-col sm:flex-row my-5 gap-3 justify-around items-center">
         <div className="flex flex-col justify-center items-center">
-          <Image  className="w-28 h-28 rounded-full object-cover bg-pink-50" src="/support-kitty.gif" alt="coin Image" />
+          <Image width={28} height={28}  className="w-28 h-28 rounded-full object-cover bg-pink-50" src="/support-kitty.gif" alt="coin Image" />
           <h2 className="font-bold scale-105">Student want to help</h2>
           <p className="my-3">Your students avlaible to help you.</p>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Image  className="w-28 h-28 rounded-full object-cover bg-pink-50" src="/money-kitty.gif" alt="coin Image" />
+          <Image width={28} height={28} className="w-28 h-28 rounded-full object-cover bg-pink-50" src="/money-kitty.gif" alt="coin Image" />
           <h2 className="font-bold scale-105">Student want to contrebute</h2>
           <p className="my-3">Your students want to contrebute finacially.</p>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Image  className="w-28 h-28 rounded-full object-cover bg-pink-50" src="/money-kitty.gif" alt="coin Image" />
+          <Image width={28} height={28} className="w-28 h-28 rounded-full object-cover bg-pink-50" src="/money-kitty.gif" alt="coin Image" />
           <h2 className="font-bold scale-105">Student want to contrebute</h2>
           <p className="my-3">Your students want to contrebute finacially.</p>
         </div>

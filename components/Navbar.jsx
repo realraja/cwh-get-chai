@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="min-h-[7vh] bg-gray-900 px-2 text-white flex justify-between items-center">
       <Link href={'/'} className="flex items-center justify-center gap-2 mx-2 cursor-pointer">
-        <span><Image  className="h-10" src="/writing-cat.gif" alt="logo" /></span>
+        <span><Image width={10} height={10}  className="h-10 w-auto" src="/writing-cat.gif" alt="logo" /></span>
         <p className="text-2xl font-bold">Get Your Notes</p>
       </Link>
 

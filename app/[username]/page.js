@@ -100,7 +100,7 @@ const Username = ({params}) => {
     <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
     <div className='p-4'>      
       <div className="flex justify-center  items-center gap-10">
-            <Image  src={profileData?.profilePic} alt="Profile Image" className="w-32 h-32 rounded-full object-cover mb-4" />
+            <img  src={profileData?.profilePic} alt="Profile Image" className="w-32 h-32 rounded-full object-cover mb-4" />
             <div>
             <h1 className="text-2xl font-bold mb-2">{profileData?.username}</h1>
             {/* <h1 className="text-2xl font-bold mb-2">{session?.user.email.split('@')[0]}</h1> */}
@@ -116,13 +116,13 @@ const Username = ({params}) => {
 
             {
               allPayments.map((i,v) =>{
-               return i.done && <p key={v} className="flex items-center gap-4"><Image  className="rounded-full w-6 object-contain"  src="/profile.gif" alt="profile pic" /> <span className="text-green-400">₹{i.amount/100}</span> donated {`[${i.date[3]}-${i.date[4]}-${i.date[5]}]`} by {i.name} with massage:{i.message}</p>
+               return i.done && <p key={v} className="flex items-center gap-4"><Image height={6} width={6}  className="rounded-full h-auto w-6 object-contain"  src="/profile.gif" alt="profile pic" /> <span className="text-green-400">₹{i.amount/100}</span> donated {`[${i.date[3]}-${i.date[4]}-${i.date[5]}]`} by {i.name} with massage:{i.message}</p>
               })
               
             }
             {
               allPayments.map((i,v) =>{ 
-               return !i.done && <p key={v} className="flex items-center gap-4"><Image  className="rounded-full w-6 object-contain"  src="/profile.gif" alt="profile pic" /> <span className="text-red-400">₹{i.amount/100}</span>failed {`[${i.date[3]}-${i.date[4]}-${i.date[5]}]`} by {i.name} with massage: {i.message}</p>
+               return !i.done && <p key={v} className="flex items-center gap-4"><Image height={6} width={6}  className="rounded-full h-auto w-6 object-contain"  src="/profile.gif" alt="profile pic" /> <span className="text-red-400">₹{i.amount/100}</span>failed {`[${i.date[3]}-${i.date[4]}-${i.date[5]}]`} by {i.name} with massage: {i.message}</p>
               })
               
             }
